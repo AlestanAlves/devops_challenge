@@ -1,0 +1,9 @@
+# ignore Dockerfile
+Dockerfile
+
+# ignore files git
+.gitignore
+.git
+
+# ignore modules node
+node_modules

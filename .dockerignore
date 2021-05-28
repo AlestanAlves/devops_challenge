@@ -1,0 +1,16 @@
+# ignore Dockerfile
+Dockerfile
+
+# ignore files git
+.gitignore
+.git
+
+# ignore modules node
+node_modules
+
+# ignore env files
+.env
+*.env
+api.env
+postgres.env
+web.env

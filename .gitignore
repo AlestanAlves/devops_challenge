@@ -42,7 +42,10 @@
 config/local.js
 
 
-
+.env*
+api.env
+postgres.env
+web.env
 
 
 ################################################

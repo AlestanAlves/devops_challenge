@@ -1,0 +1,31 @@
+version: "3"
+services:
+
+  # Banco de dados que precisa para a api funcionar
+  postgresdb:
+    image: postgres
+    ports:
+      - 5432:5432
+    env_file: postgres.env
+    volumes:
+        - ./api/data/postgres:/var/lib/postgresql/data
+
+  # API que funcionará para os requests no frontend
+  api:
+    build:
+      context: ./api
+      dockerfile: ./Dockerfile
+    depends_on:
+      - postgresdb
+    ports:
+      - 8877:8877
+    env_file: api.env
+
+  # front-end da aplicação
+  web:
+    build:
+      context: ./web
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:8080
+    env_file: web.env
