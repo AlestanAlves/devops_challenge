@@ -1,3 +1,7 @@
+# Link do meu artigo
+
+https://medium.com/alestanalves/como-criar-um-ambiente-de-desenvolvimento-nodejs-seguro-utilizando-docker-docker-compose-e-ansible-273841ae41e8
+
 # DockerCon 2021 - Desafio DevOps
 
 - Este repositório contém o código para uma aplicação multilayer
